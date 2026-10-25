@@ -35,7 +35,7 @@
     >
     <meta
         name="generator"
-        content="Bagisto"
+        content="Harborly"
     >
 
     @if ($broadcasting = app(\Webkul\Admin\Helpers\Broadcasting::class)->clientConfig())
@@ -67,7 +67,7 @@
     <link
         rel="preload"
         as="image"
-        href="{{ url('cache/logo/bagisto.png') }}"
+        href="{{ bagisto_asset('images/logo.svg') }}"
     >
 
     @if ($favicon = core()->getConfigData('general.design.admin_logo.favicon'))
@@ -98,7 +98,7 @@
 <body class="h-full dark:bg-gray-950">
     {!! view_render_event('bagisto.admin.layout.body.before') !!}
 
-    <!-- Built With Bagisto -->
+    <!-- Built With Harborly -->
     <div
         id="app"
         class="h-full"
@@ -138,10 +138,7 @@
                 <!-- Powered By -->
                 <div class="mt-auto">
                     <div class="border-t bg-white py-2 text-center text-xs sm:text-sm dark:border-gray-800 dark:bg-gray-900 dark:text-white">
-                        @lang('admin::app.components.layouts.powered-by.description', [
-                            'bagisto' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://bagisto.com/en/">Bagisto</a>',
-                            'webkul' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://webkul.com/">Webkul</a>',
-                        ])
+                        Made by Tahsan · <a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
                     </div>
                 </div>
             </div>

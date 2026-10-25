@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harborly — Coastal Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #102A28;
+      --sea: #0F766E;
+      --sea-deep: #0B3D3A;
+      --foam: #F4F7F5;
+      --sand: #E8DFD0;
+      --accent: #D4A373;
+      --line: #d5e3df;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Manrope, Segoe UI, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #dceeea 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #efe6d8 0%, transparent 50%),
+        var(--foam);
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1180px, calc(100% - 2.5rem)); margin-inline: auto; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(244, 247, 245, 0.86);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 0; gap: 1rem;
+    }
+    .brand { display: flex; align-items: center; gap: 0.7rem; font-weight: 700; letter-spacing: -0.02em; }
+    .brand img { width: 34px; height: 34px; border-radius: 8px; object-fit: cover; }
+    .brand span { font-family: Fraunces, Georgia, serif; font-size: 1.35rem; color: var(--sea-deep); }
+    .links { display: flex; gap: 1.25rem; font-weight: 600; font-size: 0.95rem; }
+    .links a:hover { color: var(--sea); }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--sea-deep); color: #fff; font-weight: 700;
+      padding: 0.85rem 1.25rem; border-radius: 999px; transition: 0.2s ease;
+    }
+    .cta:hover { background: var(--sea); transform: translateY(-1px); }
+    .cta-light { background: var(--accent); color: #3b2714; }
+
+    .hero {
+      display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 2.5rem;
+      align-items: end; padding: 3.5rem 0 2.5rem;
+      min-height: min(78vh, 760px);
+    }
+    .eyebrow {
+      display: inline-block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--sea); margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.6rem, 5vw, 4.4rem);
+      line-height: 1.05; letter-spacing: -0.03em;
+      color: var(--sea-deep); max-width: 11ch; margin-bottom: 1.1rem;
+    }
+    .hero p { max-width: 34rem; color: #3f5551; font-size: 1.05rem; margin-bottom: 1.6rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .hero-visual {
+      position: relative; border-radius: 1.5rem; overflow: hidden;
+      min-height: 420px; box-shadow: 0 30px 60px rgba(11, 61, 58, 0.18);
+    }
+    .hero-visual img { width: 100%; height: 100%; object-fit: cover; min-height: 420px; }
+    .hero-chip {
+      position: absolute; left: 1rem; bottom: 1rem;
+      background: rgba(244,247,245,0.92); backdrop-filter: blur(8px);
+      padding: 0.85rem 1rem; border-radius: 1rem; font-size: 0.9rem; font-weight: 600;
+    }
+
+    .section { padding: 2.5rem 0 3.5rem; }
+    .section-head {
+      display: flex; align-items: end; justify-content: space-between;
+      gap: 1rem; margin-bottom: 1.5rem;
+    }
+    .section-head h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      letter-spacing: -0.02em; color: var(--sea-deep);
+    }
+    .section-head p { color: #54706b; max-width: 28rem; }
+
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem;
+    }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 1.25rem;
+      overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(11,61,58,0.1); }
+    .card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--sand); }
+    .meta { padding: 1rem 1.1rem 1.2rem; }
+    .meta h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
+    .meta .sub { color: #6a7f7a; font-size: 0.9rem; margin-bottom: 0.55rem; }
+    .price { color: var(--sea); font-weight: 800; }
+
+    .promo {
+      margin: 0.5rem 0 2rem;
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1rem;
+      border-radius: 1.5rem; overflow: hidden; background: var(--sea-deep); color: #fff;
+    }
+    .promo-copy { padding: 2.2rem; display: flex; flex-direction: column; justify-content: center; gap: 0.8rem; }
+    .promo-copy h2 { font-family: Fraunces, Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.1; }
+    .promo-copy p { opacity: 0.88; max-width: 32rem; }
+    .promo img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
+
+    .about {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;
+      padding: 1rem 0 3rem;
+    }
+    .about h2 {
+      font-family: Fraunces, Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--sea-deep); margin-bottom: 0.8rem;
+    }
+    .about p { color: #4a635e; margin-bottom: 0.8rem; }
+    .about-panel {
+      border-radius: 1.4rem; overflow: hidden; min-height: 320px;
+      box-shadow: 0 20px 40px rgba(11,61,58,0.12);
+    }
+    .about-panel img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem 0 2rem; color: #607873; font-size: 0.92rem;
+      display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .links { display: none; }
+      .hero, .promo, .about, .grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding-top: 2rem; }
+      .hero h1 { max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home">
+        <img src="public/harborly-logo.jpg" alt="" />
+        <span>Harborly</span>
+      </a>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#new">New</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="cta" href="#shop">Shop collection</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <p class="eyebrow">Coastal essentials · Spring drop</p>
+        <h1>Clothes made for harbor mornings</h1>
+        <p>Harborly curates linen layers, weekend bags, and everyday coastal pieces — calm materials, durable builds, and a storefront that feels as clear as the tide.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#shop">Shop now</a>
+          <a class="cta cta-light" href="#new">See new arrivals</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="public/products/hero.jpg" alt="Harborly coastal lifestyle collection" />
+        <div class="hero-chip">New · Harbor linen edit</div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="shop">
+      <div class="section-head">
+        <div>
+          <h2>Featured products</h2>
+          <p>Real pieces for travel days, docks, and weekends away.</p>
+        </div>
+        <a href="#new" style="font-weight:700;color:var(--sea)">View all →</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="public/products/shirt.jpg" alt="Coastal linen shirt" />
+          <div class="meta">
+            <h3>Coastal Linen Shirt</h3>
+            <div class="sub">Breathable everyday layer</div>
+            <div class="price">$48</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="public/products/tote.jpg" alt="Harbor tote bag" />
+          <div class="meta">
+            <h3>Harbor Tote</h3>
+            <div class="sub">Canvas carryall</div>
+            <div class="price">$36</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="public/products/shoes.jpg" alt="Tide runner sneakers" />
+          <div class="meta">
+            <h3>Tide Runner</h3>
+            <div class="sub">Lightweight coastal sneaker</div>
+            <div class="price">$89</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="public/products/cap.jpg" alt="Seaglass cap" />
+          <div class="meta">
+            <h3>Seaglass Cap</h3>
+            <div class="sub">Soft washed cotton</div>
+            <div class="price">$24</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="public/products/sweater.jpg" alt="Dock knit sweater" />
+          <div class="meta">
+            <h3>Dock Knit</h3>
+            <div class="sub">Weekend sweater</div>
+            <div class="price">$72</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="public/products/bag.jpg" alt="Weekend duffel" />
+          <div class="meta">
+            <h3>Weekend Duffel</h3>
+            <div class="sub">Overnight travel bag</div>
+            <div class="price">$118</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap promo" id="new">
+      <div class="promo-copy">
+        <p class="eyebrow" style="color:#9fddd5">This week</p>
+        <h2>New arrivals for slower weekends</h2>
+        <p>Fresh drops in sand, seafoam, and deep harbor tones — styled for coastal living without the clutter.</p>
+        <div><a class="cta cta-light" href="#shop">Browse new</a></div>
+      </div>
+      <img src="public/products/hero.jpg" alt="New Harborly arrivals" />
+    </section>
+
+    <section class="wrap about" id="about">
+      <div>
+        <h2>About Harborly</h2>
+        <p>We design a quieter kind of e-commerce: clear navigation, honest product photography, and collections that feel like packing for a waterfront week.</p>
+        <p>Made for people who want quality basics with a coastal point of view.</p>
+        <a class="cta" href="#shop">Start shopping</a>
+      </div>
+      <div class="about-panel">
+        <img src="public/products/tote.jpg" alt="Harborly product detail" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>Made by Tahsan · CC BY 4.0</span>
+    <span>Harborly Shop</span>
+  </footer>
+</body>
+</html>

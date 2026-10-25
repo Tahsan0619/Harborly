@@ -5,10 +5,10 @@ return [
         'forgot-password' => [
             'already-sent' => 'Already Password Reset Mail Sent.',
             'back' => 'Back to sign In ?',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Harborly',
             'email' => 'Email',
             'email-not-exist' => 'We cannot find a user with that email address.',
-            'footer' => '© Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
+            'footer' => '? Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
             'forgot-password-text' => 'If you forgot your password, recover it by entering your email address.',
             'page-title' => 'Forgot your password ?',
             'reset-link-sent' => 'If this email address is registered, a password reset link has been sent to it.',
@@ -20,21 +20,21 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'Back to Sign In',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Harborly',
             'confirm-password' => 'Confirm Password',
             'email' => 'Registered Email',
-            'footer' => '© Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
+            'footer' => '? Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
             'password' => 'Password',
             'submit-btn-title' => 'Reset Password',
             'title' => 'Reset Password',
         ],
 
         'login-form' => [
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Harborly',
             'button-title' => 'Sign In',
             'create-your-account' => 'Create your account',
             'email' => 'Email',
-            'footer' => '© Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
+            'footer' => '? Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
             'forgot-pass' => 'Forgot Password?',
             'form-login-text' => 'If you have an account, sign in with your email address.',
             'invalid-credentials' => 'Please check your credentials and try again.',
@@ -50,13 +50,13 @@ return [
 
         'signup-form' => [
             'account-exists' => 'Already have an account ?',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Harborly',
             'button-title' => 'Register',
             'click-here' => 'Click Here',
             'confirm-pass' => 'Confirm Password',
             'email' => 'Email',
             'first-name' => 'First Name',
-            'footer' => '© Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
+            'footer' => '? Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
             'form-signup-text' => 'If you are new to our store, we glad to have you as member.',
             'last-name' => 'Last Name',
             'page-title' => 'Become User',
@@ -363,7 +363,7 @@ return [
                 'completed' => 'Completed',
                 'date' => 'Date',
                 'download-error' => 'Download link has been expired.',
-                'empty-product' => 'You don’t have a product to download',
+                'empty-product' => 'You don?t have a product to download',
                 'expired' => 'Expired',
                 'name' => 'Downloadable Products',
                 'orderId' => 'Order Id',
@@ -583,7 +583,7 @@ return [
                     'bottom' => [
                         'all' => 'All',
                         'back-button' => 'Back to Main Menu',
-                        'bagisto' => 'Bagisto',
+                        'bagisto' => 'Harborly',
                         'categories' => 'Categories',
                         'compare' => 'Compare',
                         'dropdown-text' => 'Manage Cart, Orders & Wishlist',
@@ -604,7 +604,7 @@ return [
                 'mobile' => [
                     'account' => 'Account',
                     'back-button' => 'Back to Main Menu',
-                    'bagisto' => 'Bagisto',
+                    'bagisto' => 'Harborly',
                     'compare' => 'Compare',
                     'currencies' => 'Currencies',
                     'dropdown-text' => 'Manage Cart, Orders & Wishlist',
@@ -644,7 +644,7 @@ return [
                 'customer-service' => 'Customer Service',
                 'email' => 'Email',
                 'footer-content' => 'Footer Content',
-                'footer-text' => '© Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
+                'footer-text' => '? Copyright 2010 - :current_year, Webkul Software (Registered in India). All rights reserved.',
                 'locale' => 'Locale',
                 'newsletter-text' => 'Get Ready for our Fun Newsletter!',
                 'order-return' => 'Order and Returns',
@@ -654,7 +654,7 @@ return [
                 'subscribe' => 'Subscribe',
                 'subscribe-newsletter' => 'Subscribe Newsletter',
                 'subscribe-stay-touch' => 'Subscribe to stay in touch.',
-                'whats-new' => 'What’s New',
+                'whats-new' => 'What?s New',
             ],
 
             'cookie' => [
@@ -866,8 +866,8 @@ return [
                         'title' => 'Event on :',
                         'total-price' => 'Total Price',
                         'summary-title' => 'Your booking',
-                        'ticket-line' => ':name (:count × :price)',
-                        'base-fee-line' => 'Base fee (:count × :price)',
+                        'ticket-line' => ':name (:count ? :price)',
+                        'base-fee-line' => 'Base fee (:count ? :price)',
                         'ticket' => 'ticket',
                         'tickets' => 'tickets',
                         'total' => 'Total',
@@ -891,8 +891,8 @@ return [
                         'to' => 'To',
                         'summary-title' => 'Your rental',
                         'base-rental-fee' => 'Base rental fee',
-                        'daily-rate-line' => 'Daily rate (:count × :rate)',
-                        'hourly-rate-line' => 'Hourly rate (:count × :rate)',
+                        'daily-rate-line' => 'Daily rate (:count ? :rate)',
+                        'hourly-rate-line' => 'Hourly rate (:count ? :rate)',
                         'day' => 'day',
                         'days' => 'days',
                         'hour' => 'hour',
@@ -1113,10 +1113,10 @@ return [
             'suspended-account-message' => 'Your account has been suspended.',
 
             'index' => [
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Harborly',
                 'cart' => 'Cart',
                 'continue-shopping' => 'Continue Shopping',
-                'empty-product' => 'You don’t have a product in your cart.',
+                'empty-product' => 'You don?t have a product in your cart.',
                 'excl-tax' => 'Excl. Tax:',
                 'home' => 'Home',
                 'items-selected' => ':count Items Selected',
@@ -1243,7 +1243,7 @@ return [
                 'items-discount' => 'Items Discount',
                 'shipping-discount' => 'Shipping Discount',
                 'place-order' => 'Place Order',
-                'price-and-qty' => ':price × :qty',
+                'price-and-qty' => ':price ? :qty',
                 'processing' => 'Processing',
                 'sub-total' => 'Subtotal',
                 'sub-total-excl-tax' => 'Subtotal (Excl. Tax)',
@@ -1279,8 +1279,8 @@ return [
 
     'home' => [
         'contact' => [
-            'about' => 'Jot us a note, and we’ll get back to you as quickly as possible',
-            'desc' => ' What’s on your mind?',
+            'about' => 'Jot us a note, and we?ll get back to you as quickly as possible',
+            'desc' => ' What?s on your mind?',
             'describe-here' => 'Describe Here',
             'email' => 'Email',
             'message' => 'Message',
@@ -1833,7 +1833,7 @@ return [
             'email' => 'Email address',
             'submit' => 'Send me the withdrawal link',
             'sent-notice' => 'If a matching order exists, we have just emailed a withdrawal link to that address. It will be valid for 24 hours.',
-            'legal-note' => 'You have the statutory right under EU Directive 2011/83/EU (as amended) to withdraw from your contract within 14 days. Other means of withdrawal — including a written statement sent to our customer service — remain valid.',
+            'legal-note' => 'You have the statutory right under EU Directive 2011/83/EU (as amended) to withdraw from your contract within 14 days. Other means of withdrawal ? including a written statement sent to our customer service ? remain valid.',
         ],
 
         'form' => [
@@ -1891,7 +1891,7 @@ return [
 
         'emails' => [
             'confirmation' => [
-                'subject' => 'Confirmation of your withdrawal — Order :order_id',
+                'subject' => 'Confirmation of your withdrawal ? Order :order_id',
                 'title' => 'Withdrawal received',
                 'title-received' => 'Withdrawal received',
                 'title-refunded' => 'Refund issued',

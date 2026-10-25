@@ -41,7 +41,7 @@
         >
         <meta 
             name="generator" 
-            content="Bagisto"
+            content="Harborly"
         >
 
         @stack('meta')

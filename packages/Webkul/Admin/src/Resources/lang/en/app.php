@@ -6,7 +6,7 @@ return [
             'email' => 'Email Address',
             'forget-password-link' => 'Forget Password ?',
             'password' => 'Password',
-            'powered-by-description' => 'Powered by :bagisto, an open-source project by :webkul.',
+            'powered-by-description' => 'Made by Tahsan ? CC BY 4.0',
             'submit-btn' => 'Sign In',
             'title' => 'Sign In',
         ],
@@ -16,7 +16,7 @@ return [
                 'email' => 'Registered Email',
                 'email-not-exist' => 'Email Not Exists',
                 'page-title' => 'Forget Password',
-                'powered-by-description' => 'Powered by :bagisto, an open-source project by :webkul.',
+                'powered-by-description' => 'Made by Tahsan ? CC BY 4.0',
                 'reset-link-sent' => 'Reset Password link sent',
                 'reset-link-failed' => 'Unable to send the password reset link. Please try again later.',
                 'sign-in-link' => 'Back to Sign In ?',
@@ -30,7 +30,7 @@ return [
             'confirm-password' => 'Confirm Password',
             'email' => 'Registered Email',
             'password' => 'Password',
-            'powered-by-description' => 'Powered by :bagisto, an open-source project by :webkul.',
+            'powered-by-description' => 'Made by Tahsan ? CC BY 4.0',
             'submit-btn' => 'Reset Password',
             'title' => 'Reset Password',
         ],
@@ -125,13 +125,13 @@ return [
     'help' => [
         'index' => [
             'title' => 'Help & Resources',
-            'description' => 'Everything you need to get the most out of Bagisto — hosting, support and professional services, plus extensions and developer documentation.',
+            'description' => 'Everything you need to get the most out of Harborly ? hosting, support and professional services, plus extensions and developer documentation.',
 
             'services-title' => 'Services',
             'resources-title' => 'Resources & Documentation',
 
             'cloud-hosting' => 'Cloud Hosting',
-            'cloud-hosting-info' => 'Cost-effective, managed cloud hosting — launch your Bagisto store on the cloud in minutes, fully optimised and scalable.',
+            'cloud-hosting-info' => 'Cost-effective, managed cloud hosting ? launch your Harborly store on the cloud in minutes, fully optimised and scalable.',
 
             'support' => 'Support & Maintenance',
             'support-info' => 'Dedicated technical support and ongoing maintenance plans to keep your store secure, updated and running smoothly.',
@@ -140,22 +140,22 @@ return [
             'paid-services-info' => 'Expert help for module integration, customisation, data migration, version upgrades and bespoke development.',
 
             'extensions' => 'Extensions',
-            'extensions-info' => 'Browse official and community add-ons to extend Bagisto with new connectors, channels and features.',
+            'extensions-info' => 'Browse official and community add-ons to extend Harborly with new connectors, channels and features.',
 
             'docs' => 'Dev Docs & Blogs',
             'docs-info' => 'Developer guides, tutorials and the latest articles to help you build, configure and stay up to date.',
 
             'api-docs' => 'API Docs',
-            'api-docs-info' => 'Full REST & GraphQL API reference with endpoints, authentication and examples to integrate Bagisto with your stack.',
+            'api-docs-info' => 'Full REST & GraphQL API reference with endpoints, authentication and examples to integrate Harborly with your stack.',
 
             'community' => 'Community Forum',
-            'community-info' => 'Ask questions, share ideas and connect with thousands of Bagisto developers and merchants worldwide.',
+            'community-info' => 'Ask questions, share ideas and connect with thousands of Harborly developers and merchants worldwide.',
 
             'video-tutorials' => 'Video Tutorials',
             'video-tutorials-info' => 'Step-by-step video walkthroughs covering installation, configuration and everyday store management.',
 
             'cta-title' => 'Still need a hand?',
-            'cta-description' => 'Talk to the Bagisto team about hosting, custom development or anything else.',
+            'cta-description' => 'Talk to the Harborly team about hosting, custom development or anything else.',
             'cta-btn' => 'Contact Us',
         ],
     ],
@@ -196,10 +196,10 @@ return [
             'store-stats' => 'Store Stats',
             'title' => 'Dashboard',
             'to' => 'To',
-            'today-customers' => 'Today’s Customers',
-            'today-details' => 'Today’s Details',
-            'today-orders' => 'Today’s Orders',
-            'today-sales' => 'Today’s Sales',
+            'today-customers' => 'Today?s Customers',
+            'today-details' => 'Today?s Details',
+            'today-orders' => 'Today?s Orders',
+            'today-sales' => 'Today?s Sales',
             'top-performing-categories' => 'Top Performing Categories',
             'top-selling-products' => 'Top Selling Products',
             'total-customers' => 'Total Customers',
@@ -207,7 +207,7 @@ return [
             'total-sales' => 'Total Sales',
             'total-stock' => ':total_stock Stock',
             'total-unpaid-invoices' => 'Total Unpaid Invoices',
-            'user-info' => 'Quickly Review what’s going on in your store',
+            'user-info' => 'Quickly Review what?s going on in your store',
             'user-name' => 'Hi ! :user_name',
         ],
     ],
@@ -301,7 +301,7 @@ return [
                     ],
 
                     'booking' => [
-                        'loading' => 'Loading booking configuration…',
+                        'loading' => 'Loading booking configuration?',
                         'config-missing' => 'Booking configuration is missing for this product.',
                         'date' => 'Date',
                         'date-from' => 'From Date',
@@ -453,7 +453,7 @@ return [
 
                 'booking-cancellation-not-allowed' => [
                     'title' => 'Non-Cancellable Booking Items',
-                    'description' => 'This order contains booking products configured as non-cancellable for customers. As an admin you can still cancel them — the customer is blocked from doing so on their own order view.',
+                    'description' => 'This order contains booking products configured as non-cancellable for customers. As an admin you can still cancel them ? the customer is blocked from doing so on their own order view.',
                 ],
 
                 'cancel' => 'Cancel',
@@ -1842,8 +1842,8 @@ return [
 
                 'info' => [
                     'is-filterable' => 'Adds this attribute to the category sidebar filters. Option-based types render as checkboxes; price renders as a range slider.',
-                    'is-configurable' => 'Marks this attribute as a variant axis (e.g. Color, Size). Only available for Select. Enabling it locks Value Per Channel and Value Per Locale off — variants are resolved globally by option id.',
-                    'value-per-locale' => 'Store a different value per locale. Not applicable for option-based or boolean types — their labels already translate via the option table.',
+                    'is-configurable' => 'Marks this attribute as a variant axis (e.g. Color, Size). Only available for Select. Enabling it locks Value Per Channel and Value Per Locale off ? variants are resolved globally by option id.',
+                    'value-per-locale' => 'Store a different value per locale. Not applicable for option-based or boolean types ? their labels already translate via the option table.',
                     'value-per-channel' => 'Store a different value per channel. Disabled when Use to Create Configurable Product is on.',
                     'is-visible-on-front' => 'Show this attribute on the product view page on the storefront.',
                     'is-comparable' => 'Include this attribute when comparing products side-by-side.',
@@ -1916,8 +1916,8 @@ return [
 
                 'info' => [
                     'is-filterable' => 'Adds this attribute to the category sidebar filters. Option-based types render as checkboxes; price renders as a range slider.',
-                    'is-configurable' => 'Marks this attribute as a variant axis (e.g. Color, Size). Only available for Select. Enabling it locks Value Per Channel and Value Per Locale off — variants are resolved globally by option id.',
-                    'value-per-locale' => 'Store a different value per locale. Not applicable for option-based or boolean types — their labels already translate via the option table.',
+                    'is-configurable' => 'Marks this attribute as a variant axis (e.g. Color, Size). Only available for Select. Enabling it locks Value Per Channel and Value Per Locale off ? variants are resolved globally by option id.',
+                    'value-per-locale' => 'Store a different value per locale. Not applicable for option-based or boolean types ? their labels already translate via the option table.',
                     'value-per-channel' => 'Store a different value per channel. Disabled when Use to Create Configurable Product is on.',
                     'is-visible-on-front' => 'Show this attribute on the product view page on the storefront.',
                     'is-comparable' => 'Include this attribute when comparing products side-by-side.',
@@ -3396,7 +3396,7 @@ return [
                 'themes' => 'Themes',
                 'title' => 'Edit Section',
                 'update-slider' => 'Update Slider',
-                'uploading' => 'Uploading…',
+                'uploading' => 'Uploading?',
                 'url' => 'URL',
                 'value' => 'Value: :value',
                 'value-input' => 'Value',
@@ -3758,7 +3758,7 @@ return [
                 ],
 
                 'images' => [
-                    'current-archive' => 'Currently uploaded: :name — :count image(s) ready.',
+                    'current-archive' => 'Currently uploaded: :name ? :count image(s) ready.',
                     'current-images' => ':count image(s) are already uploaded for this import.',
                     'directory-example' => 'For example, in case product-images, files should be placed into /project-root/storage/app/import/product-images folder.',
                     'directory-hint' => 'Use relative path to /project-root/storage/app/import, e.g. product-images, import-images.',
@@ -4399,7 +4399,7 @@ return [
                     'title' => 'General',
 
                     'sections' => [
-                        'bagisto' => 'Bagisto',
+                        'bagisto' => 'Harborly',
                         'cache' => 'Cached',
                         'database' => 'Database',
                         'drivers' => 'Drivers',
@@ -5839,10 +5839,10 @@ return [
                     'customers' => 'Customers',
                     'explore-all-categories' => 'Explore all categories',
                     'explore-all-customers' => 'Explore all customers',
-                    'explore-all-matching-categories' => 'Explore all categories matching “:query” (:count)',
-                    'explore-all-matching-customers' => 'Explore all customers matching “:query” (:count)',
-                    'explore-all-matching-orders' => 'Explore all Orders matching “:query” (:count)',
-                    'explore-all-matching-products' => 'Explore all products matching “:query” (:count)',
+                    'explore-all-matching-categories' => 'Explore all categories matching ?:query? (:count)',
+                    'explore-all-matching-customers' => 'Explore all customers matching ?:query? (:count)',
+                    'explore-all-matching-orders' => 'Explore all Orders matching ?:query? (:count)',
+                    'explore-all-matching-products' => 'Explore all products matching ?:query? (:count)',
                     'explore-all-orders' => 'Explore all Orders',
                     'explore-all-products' => 'Explore all products',
                     'orders' => 'Orders',
@@ -5917,7 +5917,7 @@ return [
             ],
 
             'powered-by' => [
-                'description' => 'Powered by :bagisto, an open-source project by :webkul.',
+                'description' => 'Made by Tahsan ? CC BY 4.0',
             ],
         ],
 
@@ -6308,7 +6308,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Powered by <a href="https://bagisto.com/" target="_blank">Bagisto</a>, A Community Project by <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => 'Made by Tahsan ? <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>',
     ],
 
     'emails' => [
@@ -6467,7 +6467,7 @@ return [
             'guest-badge' => 'Guest',
 
             'evidence' => 'Evidence',
-            'evidence-note' => 'Immutable — captured at submission',
+            'evidence-note' => 'Immutable ? captured at submission',
             'status' => 'Status',
             'received-at' => 'Received At',
             'uuid' => 'Reference',
@@ -6478,7 +6478,7 @@ return [
             'is-guest' => 'Guest',
             'channel' => 'Channel',
             'locale' => 'Locale',
-            'reason' => 'Customer’s reason',
+            'reason' => 'Customer?s reason',
 
             'timeline' => 'Timeline',
             'timeline-received' => 'Declaration Received',
@@ -6511,7 +6511,7 @@ return [
             'refunded-at' => 'Refunded at',
 
             'actions' => 'Actions',
-            'actions-note' => 'Refunds are processed manually via Bagisto’s existing order / refund / RMA tools. Use these actions to record the outcome on the withdrawal evidence.',
+            'actions-note' => 'Refunds are processed manually via Harborly?s existing order / refund / RMA tools. Use these actions to record the outcome on the withdrawal evidence.',
             'resend-confirmation' => 'Resend Confirmation Email',
             'mark-refunded' => 'Mark as Refunded',
             'refund-note-label' => 'Refund reference (optional)',

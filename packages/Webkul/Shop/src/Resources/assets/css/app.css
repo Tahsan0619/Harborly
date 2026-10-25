@@ -24,11 +24,11 @@
     /**
      * Colours — the palette of named colours used in the storefront.
      */
-    --color-navyBlue:    #060C3B;
-    --color-lightOrange: #F6F2EB;
-    --color-darkGreen:   #40994A;
-    --color-darkBlue:    #0044F2;
-    --color-darkPink:    #F85156;
+    --color-navyBlue:    #0B3D3A;
+    --color-lightOrange: #F0F7F5;
+    --color-darkGreen:   #0D9488;
+    --color-darkBlue:    #0F766E;
+    --color-darkPink:    #14B8A6;
 
     /**
      * Fonts — the named families the storefront can ask for by utility.
@@ -356,7 +356,7 @@
     .glow-404 {
         background-clip: text;
         -webkit-background-clip: text;
-        color: #060C3B;
+        color: #0B3D3A;
     }
 
     .glow-shadow-404 {
