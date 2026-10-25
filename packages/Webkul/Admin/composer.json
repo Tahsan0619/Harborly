@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-admin",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "description" : "Admin package",
     "authors": [
         {
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

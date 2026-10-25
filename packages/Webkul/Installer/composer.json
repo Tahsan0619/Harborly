@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-installer",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "description": "Installer package",
     "authors": [
         {

@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-shop",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "description" : "Shop package for store front and customers",
     "authors": [
         {
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

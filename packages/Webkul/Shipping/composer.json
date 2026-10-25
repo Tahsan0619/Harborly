@@ -1,7 +1,7 @@
-{
+﻿{
     "name": "bagisto/laravel-shipping",
     "description": "Shipping Package for Shipping Method",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "rahulshukla-webkul",
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

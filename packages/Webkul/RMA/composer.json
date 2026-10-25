@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/bagisto-rma",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "description" : "RMA package for return merchandise authorization.",
     "authors": [
         {
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

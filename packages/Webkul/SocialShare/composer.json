@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-social-share",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "Bagisto",
@@ -23,3 +23,4 @@
     },
     "minimum-stability": "dev"
 }
+

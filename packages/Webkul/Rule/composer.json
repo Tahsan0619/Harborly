@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-rule",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "Jitendra Singh",
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

@@ -1,7 +1,7 @@
-{
+﻿{
     "name": "bagisto/laravel-customer",
     "description": "Customers Package for themeing and various features for customers",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "Bagisto",
@@ -24,3 +24,4 @@
     },
     "minimum-stability": "dev"
 }
+

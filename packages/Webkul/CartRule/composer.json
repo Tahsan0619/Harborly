@@ -1,6 +1,6 @@
-{
+﻿{
     "name": "bagisto/laravel-cart-rule",
-    "license": "MIT",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "Jitendra Singh",
